@@ -11,7 +11,21 @@
 
 #include "cocos2d.h"
 
+static const char * const BgImgName = "background.png";
+static const float BgImgHeight = 768.0;
+
 class GameScene : public cocos2d::CCLayer {
+protected:
+  enum kTag {
+    kTagBackGround = 1,
+  };
+  enum kZOrder {
+    kZOrderBackground,
+  };
+
+  cocos2d::CCSprite* m_background;
+  void showBackground();
+
 public:
   virtual bool init();
   static cocos2d::CCScene* scene();

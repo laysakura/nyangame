@@ -18,5 +18,17 @@ CCScene* GameScene::scene() {
 }
 
 bool GameScene::init() {
-  return CCLayer::init();
+  if (!CCLayer::init()) { return false; }
+
+  showBackground();
+
+  return true;
+}
+
+void GameScene::showBackground() {
+  CCSize winSize = CCDirector::sharedDirector()->getWinSize();
+
+  m_background = CCSprite::create(BgImgName);
+  m_background->setPosition(ccp(winSize.width / 2, winSize.height / 2));
+  addChild(m_background, kZOrderBackground, kTagBackGround);
 }
