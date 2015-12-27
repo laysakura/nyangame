@@ -247,6 +247,12 @@
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
 		518DEDA51C2B23D7006E9ABE /* GameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 518DEDA31C2B23D7006E9ABE /* GameScene.cpp */; };
 		518DEDA71C2B27D6006E9ABE /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 518DEDA61C2B27D6006E9ABE /* background.png */; };
+		518DEDAB1C2B66CA006E9ABE /* BlockSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 518DEDA91C2B66CA006E9ABE /* BlockSprite.cpp */; };
+		518DEDB11C2F779B006E9ABE /* blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 518DEDAC1C2F779B006E9ABE /* blue.png */; };
+		518DEDB21C2F779B006E9ABE /* gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 518DEDAD1C2F779B006E9ABE /* gray.png */; };
+		518DEDB31C2F779B006E9ABE /* green.png in Resources */ = {isa = PBXBuildFile; fileRef = 518DEDAE1C2F779B006E9ABE /* green.png */; };
+		518DEDB41C2F779B006E9ABE /* red.png in Resources */ = {isa = PBXBuildFile; fileRef = 518DEDAF1C2F779B006E9ABE /* red.png */; };
+		518DEDB51C2F779B006E9ABE /* yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 518DEDB01C2F779B006E9ABE /* yellow.png */; };
 		7855E0E1153FEF240059DD9A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7855E0DF153FEF240059DD9A /* Default.png */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712461292920000B8313A /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB212928DE900B8313A /* libxml2.dylib */; };
@@ -782,6 +788,14 @@
 		518DEDA31C2B23D7006E9ABE /* GameScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameScene.cpp; sourceTree = "<group>"; };
 		518DEDA41C2B23D7006E9ABE /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
 		518DEDA61C2B27D6006E9ABE /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		518DEDA81C2B2BE9006E9ABE /* PazzleConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PazzleConfig.h; sourceTree = "<group>"; };
+		518DEDA91C2B66CA006E9ABE /* BlockSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BlockSprite.cpp; sourceTree = "<group>"; };
+		518DEDAA1C2B66CA006E9ABE /* BlockSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockSprite.h; sourceTree = "<group>"; };
+		518DEDAC1C2F779B006E9ABE /* blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blue.png; sourceTree = "<group>"; };
+		518DEDAD1C2F779B006E9ABE /* gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gray.png; sourceTree = "<group>"; };
+		518DEDAE1C2F779B006E9ABE /* green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = green.png; sourceTree = "<group>"; };
+		518DEDAF1C2F779B006E9ABE /* red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red.png; sourceTree = "<group>"; };
+		518DEDB01C2F779B006E9ABE /* yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yellow.png; sourceTree = "<group>"; };
 		7855E0DF153FEF240059DD9A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = SOURCE_ROOT; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB212928DE900B8313A /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
@@ -1320,6 +1334,9 @@
 				1AFAF8B416D35DE700DB1158 /* AppDelegate.h */,
 				518DEDA31C2B23D7006E9ABE /* GameScene.cpp */,
 				518DEDA41C2B23D7006E9ABE /* GameScene.h */,
+				518DEDA81C2B2BE9006E9ABE /* PazzleConfig.h */,
+				518DEDA91C2B66CA006E9ABE /* BlockSprite.cpp */,
+				518DEDAA1C2B66CA006E9ABE /* BlockSprite.h */,
 			);
 			name = Classes;
 			path = ../Classes;
@@ -1931,6 +1948,11 @@
 		78C7DDAA14EBA5050085D0C2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				518DEDAC1C2F779B006E9ABE /* blue.png */,
+				518DEDAD1C2F779B006E9ABE /* gray.png */,
+				518DEDAE1C2F779B006E9ABE /* green.png */,
+				518DEDAF1C2F779B006E9ABE /* red.png */,
+				518DEDB01C2F779B006E9ABE /* yellow.png */,
 				518DEDA61C2B27D6006E9ABE /* background.png */,
 				1AFAF8B916D35E4900DB1158 /* CloseNormal.png */,
 				1AFAF8BA16D35E4900DB1158 /* CloseSelected.png */,
@@ -2016,16 +2038,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				7855E0E1153FEF240059DD9A /* Default.png in Resources */,
+				518DEDB21C2F779B006E9ABE /* gray.png in Resources */,
 				D4EF949A15BD2D8B00D803EB /* Icon-57.png in Resources */,
+				518DEDB41C2F779B006E9ABE /* red.png in Resources */,
 				D4EF949C15BD2D8E00D803EB /* Icon-114.png in Resources */,
 				D4EF949E15BD2D9600D803EB /* Icon-72.png in Resources */,
 				D4EF94A015BD2D9800D803EB /* Icon-144.png in Resources */,
 				D41A0AD1160F154A004552AE /* Default-568h@2x.png in Resources */,
+				518DEDB31C2F779B006E9ABE /* green.png in Resources */,
+				518DEDB51C2F779B006E9ABE /* yellow.png in Resources */,
 				D446FD6E16102124000ADA7B /* Default@2x.png in Resources */,
 				15A3D9961682F7F9002FB0C5 /* CMakeLists.txt in Resources */,
 				1AFAF8BC16D35E4900DB1158 /* CloseNormal.png in Resources */,
 				518DEDA71C2B27D6006E9ABE /* background.png in Resources */,
 				1AFAF8BD16D35E4900DB1158 /* CloseSelected.png in Resources */,
+				518DEDB11C2F779B006E9ABE /* blue.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2092,6 +2119,7 @@
 				15C0B570196D412F007F909D /* UILayoutDefine.cpp in Sources */,
 				15A3D9221682F7D5002FB0C5 /* b2GearJoint.cpp in Sources */,
 				15A3D9231682F7D5002FB0C5 /* b2Joint.cpp in Sources */,
+				518DEDAB1C2B66CA006E9ABE /* BlockSprite.cpp in Sources */,
 				15A3D9241682F7D5002FB0C5 /* b2MouseJoint.cpp in Sources */,
 				15C0B55B196D412F007F909D /* CCDatas.cpp in Sources */,
 				15A3D9251682F7D5002FB0C5 /* b2PrismaticJoint.cpp in Sources */,
